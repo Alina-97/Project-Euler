@@ -53,13 +53,13 @@ $(document).ready(function(){
 
   // Assessment 1 solution in JavaScript
   function sumMultiplesOf3And5(limit) {
-    let total = 0;
+    let results = 0;
     for (let i = 0; i < limit; i++) {
       if (i % 3 === 0 || i % 5 === 0) {
-        total += i;
+        results += i;
       }
     }
-    return total;
+    return results;
   }
 
   // Assessment 2 solution in JavaScript
