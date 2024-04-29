@@ -8,3 +8,10 @@
 h1{
     text-align: center;
 }
+h3, p{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: larger;
+  margin-bottom: 10px;
+
+}
+ 
