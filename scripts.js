@@ -51,16 +51,35 @@ $(document).ready(function(){
     }
   }
 
-  // Assessment 1 solution in JavaScript
-  function sumMultiplesOf3And5(limit) {
-    let results = 0;
-    for (let i = 0; i < limit; i++) {
-      if (i % 3 === 0 || i % 5 === 0) {
-        results += i;
-      }
-    }
-    return results;
-  }
+  
+function multiplesOf3And5(MaxValue){
+       let sum=0;
+       let i=1;
+       for(i =1; i < MaxValue ; i++)
+       {
+        if(i % 3 ===0 || i % 5 ===0){
+          sum= i++;
+        }
+
+       }
+       return sum;
+
+}
+ const MaxValue=1000;
+ const results=multiplesOf3And5(MaxValue);
+ console.log("Sum of the multiples of 3 and 5 below", MaxValue, "is", results);
+
+ 
+
+
+
+
+
+
+
+
+
+
 
   // Assessment 2 solution in JavaScript
   function sumEvenFibonacciNumbers(limit) {
@@ -91,6 +110,6 @@ $(document).ready(function(){
   }
 
   // To get the results, you can call these functions and display the output
-  console.log(sumMultiplesOf3And5(1000));  // Output: 233168
+ // console.log(sumMultiplesOf3And5(1000));  // Output: 233168
   console.log(sumEvenFibonacciNumbers(4000000));  // Output: 4613732
   console.log(largestPrimeFactor(600851475143));  // Output: 6857
