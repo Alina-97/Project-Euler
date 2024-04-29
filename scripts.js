@@ -6,6 +6,8 @@ $(document).ready(function(){
     })
   });
 
+  //checking answers
+
   function checkAnswer(assessmentNumber) {
     var answer;
     var resultId;
@@ -48,3 +50,47 @@ $(document).ready(function(){
         return null;
     }
   }
+
+  // Assessment 1 solution in JavaScript
+  function sumMultiplesOf3And5(limit) {
+    let total = 0;
+    for (let i = 0; i < limit; i++) {
+      if (i % 3 === 0 || i % 5 === 0) {
+        total += i;
+      }
+    }
+    return total;
+  }
+
+  // Assessment 2 solution in JavaScript
+  function sumEvenFibonacciNumbers(limit) {
+    let a = 1, b = 2;
+    let total = 0;
+    while (a <= limit) {
+      if (a % 2 === 0) {
+        total += a;
+      }
+      let temp = b;
+      b = a + b;
+      a = temp;
+    }
+    return total;
+  }
+
+  // Assessment 3 solution in JavaScript
+  function largestPrimeFactor(n) {
+    let factor = 2;
+    while (n > 1) {
+      if (n % factor === 0) {
+        n /= factor;
+      } else {
+        factor++;
+      }
+    }
+    return factor;
+  }
+
+  // To get the results, you can call these functions and display the output
+  console.log(sumMultiplesOf3And5(1000));  // Output: 233168
+  console.log(sumEvenFibonacciNumbers(4000000));  // Output: 4613732
+  console.log(largestPrimeFactor(600851475143));  // Output: 6857
