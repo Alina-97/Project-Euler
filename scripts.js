@@ -63,23 +63,10 @@ function multiplesOf3And5(MaxValue){
 
        }
        return sum;
-
 }
- const MaxValue=1000;
- const results=multiplesOf3And5(MaxValue);
- console.log("Sum of the multiples of 3 and 5 below", MaxValue, "is", results);
-
- 
-
-
-
-
-
-
-
-
-
-
+const MaxValue=1000;
+const results=multiplesOf3And5(MaxValue);
+console.log("Sum of the multiples of 3 and 5 below", MaxValue, "is", results);
 
   // Assessment 2 solution in JavaScript
   function sumEvenFibonacciNumbers(limit) {
