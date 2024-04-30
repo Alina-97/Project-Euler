@@ -64,9 +64,24 @@ function multiplesOf3And5(MaxValue){
        }
        return sum;
 }
-const MaxValue=1000;
-const results=multiplesOf3And5(MaxValue);
-console.log("Sum of the multiples of 3 and 5 below", MaxValue, "is", results);
+//const MaxValue=1000;
+//const results=multiplesOf3And5(MaxValue);
+ // console.log("Sum of the multiples of 3 and 5 below", MaxValue, "is", results);
+
+function calculateSum() {
+  var num1 = parseInt(document.getElementById("num1").value);
+  var num2 = parseInt(document.getElementById("num2").value);
+  var max = parseInt(document.getElementById("max").value);
+
+  var sum = 0;
+  for (var i = 1; i < max; i++) {
+      if (i % num1 === 0 || i % num2 === 0) {
+          sum += i;
+      }
+  }
+
+  document.getElementById("result").innerHTML = "The sum of multiples of " + num1 + " and " + num2 + " below " + max + " is: " + sum;
+}
 
   // Assessment 2 solution 
   function sumEvenFibonacciNumbers(limit) {

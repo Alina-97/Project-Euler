@@ -1,11 +1,14 @@
+body{
+  font-size: large;
+  font-family: sans-serif;
+}
 .header {
     background-color: #FFA500;
     padding: 10px 0;
     text-align: center;
-   
     margin-bottom: 20px;
   }
-h1{
+h1,h2{
     text-align: center;
 }
 h3, p{
@@ -22,6 +25,10 @@ div.container2 {
     padding: 20px; 
     box-shadow: 10px 10px 5px lightgrey;
     
+}
+.label{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:larger;
 }
 
 
