@@ -14,6 +14,15 @@ h3, p{
   margin-bottom: 10px;
 
 }
-.container2{
-  border-style: outset;
+
+div.container2 {
+  
+    margin-bottom: 25px; 
+    border-width: 50px; 
+    padding: 20px; 
+    box-shadow: 10px 10px 5px lightgrey;
+    
 }
+
+
+

@@ -51,7 +51,7 @@ $(document).ready(function(){
     }
   }
 
-  
+  //Assessment 1 solution
 function multiplesOf3And5(MaxValue){
        let sum=0;
        let i=1;
@@ -68,7 +68,7 @@ const MaxValue=1000;
 const results=multiplesOf3And5(MaxValue);
 console.log("Sum of the multiples of 3 and 5 below", MaxValue, "is", results);
 
-  // Assessment 2 solution in JavaScript
+  // Assessment 2 solution 
   function sumEvenFibonacciNumbers(limit) {
     let a = 1, b = 2;
     let total = 0;
@@ -83,7 +83,7 @@ console.log("Sum of the multiples of 3 and 5 below", MaxValue, "is", results);
     return total;
   }
 
-  // Assessment 3 solution in JavaScript
+  // Assessment 3 solution
   function largestPrimeFactor(n) {
     let factor = 2;
     while (n > 1) {
