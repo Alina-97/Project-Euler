@@ -2,11 +2,26 @@ body{
   font-size: large;
   font-family: sans-serif;
 }
-.header {
+/* .header {
     background-color: #FFA500;
     padding: 10px 0;
     text-align: center;
     margin-bottom: 20px;
+  } */
+  .project-euler-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: orange;
+    color:black;
+  }
+  img{
+    width: 170px;
+    height: 55px;
+  }
+  .login-details {
+    padding-right: 20px;
   }
 h1,h2{
     text-align: center;
@@ -17,7 +32,7 @@ h3, p{
   margin-bottom: 10px;
 
 }
-
+ 
 div.container2 {
   
     margin-bottom: 25px; 
@@ -26,10 +41,18 @@ div.container2 {
     box-shadow: 10px 10px 5px lightgrey;
     
 }
+
 .label{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size:larger;
 }
 
+footer {
+
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 100px; 
+  margin-bottom: 20px;
+}
 
 
