@@ -1,7 +1,9 @@
 body{
   font-size: large;
   font-family: sans-serif;
+
 }
+
 /* .header {
     background-color: #FFA500;
     padding: 10px 0;
@@ -16,6 +18,7 @@ body{
     background-color: orange;
     color:black;
   }
+
   img{
     width: 170px;
     height: 55px;
