@@ -38,36 +38,10 @@ $(document).ready(function(){
     }
   }
 
-  function getCorrectAnswer(assessmentNumber) {
-    switch (assessmentNumber) {
-      case 1:
-        return 233168;
-      case 2:
-        return 4613732;
-      case 3:
-        return 6857;
-      default:
-        return null;
-    }
-  }
 
-  //Assessment 1 solution
-function multiplesOf3And5(MaxValue){
-       let sum=0;
-       let i=1;
-       for(i =1; i < MaxValue ; i++)
-       {
-        if(i % 3 ===0 || i % 5 ===0){
-          sum= i++;
-        }
 
-       }
-       return sum;
-}
-//const MaxValue=1000;
-//const results=multiplesOf3And5(MaxValue);
- // console.log("Sum of the multiples of 3 and 5 below", MaxValue, "is", results);
 
+//solution 1
 function calculateSum() {
   var num1 = parseInt(document.getElementById("num1").value);
   var num2 = parseInt(document.getElementById("num2").value);
@@ -84,34 +58,37 @@ function calculateSum() {
 }
 
   // Assessment 2 solution 
-  function sumEvenFibonacciNumbers(limit) {
-    let a = 1, b = 2;
+  function checkAnswer2(){
+    var limit =parseInt(document.getElementById("answer2").value);
+    let a = 1, b = 2; 
+    let temp=0;
     let total = 0;
-    while (a <= limit) {
-      if (a % 2 === 0) {
-        total += a;
+    while (b <= limit) {
+      if (b % 2 === 0) {
+        total += b;
       }
-      let temp = b;
-      b = a + b;
-      a = temp;
+       temp = a + b;
+      a = b;
+      b = temp;
     }
-    return total;
+    document.getElementById("result2").innerText = "The sum of the even-valued terms " + limit +" : "+ total ;
+
   }
 
   // Assessment 3 solution
-  function largestPrimeFactor(n) {
+  function checkAnswer() {
+    var limit =parseInt(document.getElementById("answer3").value);
     let factor = 2;
-    while (n > 1) {
-      if (n % factor === 0) {
-        n /= factor;
+
+
+    while ( limit > 1) {
+      if (limit % factor === 0) {
+        limit /= factor;
       } else {
         factor++;
       }
     }
-    return factor;
+    document.getElementById("result3").innerText = "The largest prime factor of the number " +" : "+ factor ;
   }
 
-  // To get the results, you can call these functions and display the output
- // console.log(sumMultiplesOf3And5(1000));  // Output: 233168
-  console.log(sumEvenFibonacciNumbers(4000000));  // Output: 4613732
-  console.log(largestPrimeFactor(600851475143));  // Output: 6857
+  
